@@ -1,3 +1,4 @@
+the following steps on debian 11 x86_64
 # temp
 su
 mkdir /synology
@@ -42,3 +43,8 @@ to
 +static Elf_Addr per_cpu_load_addr;
 ]
 make modules
+
+cd /synology
+git clone https://github.com/kelebek333/rtl8188fu.git
+cd rtl8188fu
+make KSRC=/synology/linux-3.10.x/
