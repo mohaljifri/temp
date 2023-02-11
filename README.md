@@ -34,6 +34,9 @@ export KSRC=/synology/linux-3.10.x/
 cd /synology/linux-3.10.x/
 cp synoconfigs/cedarview .config
  make oldconfig
+ sudo apt-get install libncurses5-dev libncursesw5-dev
+ make menuconfig
+
 make dep
 nano /arch/x86/tools/relocs.c
 [
