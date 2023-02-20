@@ -21,14 +21,14 @@ tar -xJf cedarview-gcc493_glibc220_linaro_x86_64-GPL.txz
 x86_64-pc-linux-gnu
 linux-3.10.x
 
-export CFLAGS="-I/usr/local/x86_64-pc-linux-gnu/include"
-export LDFLAGS="-I/usr/local/x86_64-pc-linux-gnu/lib"
-export RANLIB=/usr/local/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-ranlib
-export LD=/usr/local/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-ld
-export CC=/usr/local/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-gcc
-export LD_LIBRARY_PATH=/usr/local/x86_64-pc-linux-gnu/lib
-export ARCH=x86_64
-export CROSS_COMPILE=/usr/local/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-
+export CFLAGS="-I/usr/local/x86_64-pc-linux-gnu/include" &&
+export LDFLAGS="-I/usr/local/x86_64-pc-linux-gnu/lib" &&
+export RANLIB=/usr/local/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-ranlib &&
+export LD=/usr/local/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-ld &&
+export CC=/usr/local/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-gcc &&
+export LD_LIBRARY_PATH=/usr/local/x86_64-pc-linux-gnu/lib &&
+export ARCH=x86_64 &&
+export CROSS_COMPILE=/usr/local/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu- &&
 export KSRC=/synology/linux-3.10.x/
 
 cd /synology/linux-3.10.x/
